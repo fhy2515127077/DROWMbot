@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天客户端集成</title>
+    <!-- 包含聊天客户端脚本 -->
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.2/libs/oversea/index.js"></script>
+</head>
+<body>
+    <h1>嗨，我是卓尔谟聊天机器人~</h1>
+    <p>你可以和我聊天，有什么我能帮忙的？</p>
+
+    <!-- 初始化聊天客户端 -->
+    <script>
+        new CozeWebSDK.WebChatClient({
+            config: {
+                bot_id: '7373485122119172102', // 替换为你的bot ID
+            },
+            componentProps: {
+                title: 'Coze', // 根据需要自定义标题
+            },
+        });
+    </script>
+</body>
+</html>
